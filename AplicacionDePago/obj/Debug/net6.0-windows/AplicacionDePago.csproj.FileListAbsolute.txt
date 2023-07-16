@@ -1,0 +1,17 @@
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\bin\Debug\net6.0-windows\AplicacionDePago.exe
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\bin\Debug\net6.0-windows\AplicacionDePago.deps.json
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\bin\Debug\net6.0-windows\AplicacionDePago.runtimeconfig.json
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\bin\Debug\net6.0-windows\AplicacionDePago.dll
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\bin\Debug\net6.0-windows\AplicacionDePago.pdb
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\AplicacionDePago.csproj.AssemblyReference.cache
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\AplicacionDePago.frmClientes.resources
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\AplicacionDePago.csproj.GenerateResource.cache
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\AplicacionDePago.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\AplicacionDePago.AssemblyInfoInputs.cache
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\AplicacionDePago.AssemblyInfo.cs
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\AplicacionDePago.csproj.CoreCompileInputs.cache
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\AplicacionDePago.dll
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\refint\AplicacionDePago.dll
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\AplicacionDePago.pdb
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\AplicacionDePago.genruntimeconfig.cache
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\ref\AplicacionDePago.dll
