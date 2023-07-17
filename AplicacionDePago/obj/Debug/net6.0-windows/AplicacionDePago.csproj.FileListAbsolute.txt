@@ -15,3 +15,4 @@ C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-w
 C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\AplicacionDePago.pdb
 C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\AplicacionDePago.genruntimeconfig.cache
 C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\ref\AplicacionDePago.dll
+C:\Users\sauld\source\repos\AplicacionDePago\AplicacionDePago\obj\Debug\net6.0-windows\AplicacionDePago.frmPago.resources

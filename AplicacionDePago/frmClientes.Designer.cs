@@ -46,6 +46,7 @@
             btnSalir.Size = new Size(88, 27);
             btnSalir.TabIndex = 28;
             btnSalir.Text = "&Salir";
+            btnSalir.Click += btnSalir_Click;
             // 
             // btnGuardar
             // 
@@ -55,6 +56,7 @@
             btnGuardar.Size = new Size(88, 27);
             btnGuardar.TabIndex = 27;
             btnGuardar.Text = "&Guardar";
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // lblPago
             // 
@@ -64,6 +66,7 @@
             lblPago.Name = "lblPago";
             lblPago.Size = new Size(233, 92);
             lblPago.TabIndex = 26;
+            lblPago.TextChanged += lblPago_TextChanged;
             // 
             // btnSeleccionarPago
             // 
@@ -73,6 +76,7 @@
             btnSeleccionarPago.Size = new Size(121, 27);
             btnSeleccionarPago.TabIndex = 25;
             btnSeleccionarPago.Text = "Seleccionar";
+            btnSeleccionarPago.Click += btnSeleccionarPago_Click;
             // 
             // label2
             // 
@@ -101,6 +105,7 @@
             cboNombres.Name = "cboNombres";
             cboNombres.Size = new Size(233, 23);
             cboNombres.TabIndex = 22;
+            cboNombres.SelectedIndexChanged += cboNombres_SelectedIndexChanged;
             // 
             // frmClientes
             // 
@@ -117,6 +122,7 @@
             MaximumSize = new Size(428, 307);
             MinimumSize = new Size(428, 307);
             Name = "frmClientes";
+            FormClosing += frmClientes_FormClosing;
             Load += frmClientes_Load;
             ResumeLayout(false);
         }
