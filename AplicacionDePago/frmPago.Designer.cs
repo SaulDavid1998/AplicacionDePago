@@ -95,7 +95,7 @@
             lstTarjetas.Size = new Size(173, 94);
             lstTarjetas.TabIndex = 2;
             // 
-            // textBox1
+            // txtNroTarjeta
             // 
             txtNroTarjeta.Location = new Point(122, 217);
             txtNroTarjeta.Name = "txtNroTarjeta";
