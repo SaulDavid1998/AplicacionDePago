@@ -33,10 +33,10 @@
             rbtnTarjeta = new RadioButton();
             label1 = new Label();
             lstTarjetas = new ListBox();
-            textBox1 = new TextBox();
+            txtNroTarjeta = new TextBox();
             label2 = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
+            cmbMesExpiracion = new ComboBox();
+            cmbAñoExpiracion = new ComboBox();
             label3 = new Label();
             chkPredeterminado = new CheckBox();
             btnOk = new Button();
@@ -97,10 +97,10 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(122, 217);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(173, 23);
-            textBox1.TabIndex = 3;
+            txtNroTarjeta.Location = new Point(122, 217);
+            txtNroTarjeta.Name = "txtNroTarjeta";
+            txtNroTarjeta.Size = new Size(173, 23);
+            txtNroTarjeta.TabIndex = 3;
             // 
             // label2
             // 
@@ -111,23 +111,23 @@
             label2.TabIndex = 4;
             label2.Text = "Nro de tarjeta";
             // 
-            // comboBox1
+            // cmbMesExpiracion
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(122, 262);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(99, 23);
-            comboBox1.TabIndex = 5;
+            cmbMesExpiracion.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbMesExpiracion.FormattingEnabled = true;
+            cmbMesExpiracion.Location = new Point(122, 262);
+            cmbMesExpiracion.Name = "cmbMesExpiracion";
+            cmbMesExpiracion.Size = new Size(116, 23);
+            cmbMesExpiracion.TabIndex = 5;
             // 
-            // comboBox2
+            // cmbAñoExpiracion
             // 
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(227, 262);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(68, 23);
-            comboBox2.TabIndex = 6;
+            cmbAñoExpiracion.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbAñoExpiracion.FormattingEnabled = true;
+            cmbAñoExpiracion.Location = new Point(249, 262);
+            cmbAñoExpiracion.Name = "cmbAñoExpiracion";
+            cmbAñoExpiracion.Size = new Size(94, 23);
+            cmbAñoExpiracion.TabIndex = 6;
             // 
             // label3
             // 
@@ -177,10 +177,10 @@
             Controls.Add(btnOk);
             Controls.Add(chkPredeterminado);
             Controls.Add(label3);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(cmbAñoExpiracion);
+            Controls.Add(cmbMesExpiracion);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(txtNroTarjeta);
             Controls.Add(lstTarjetas);
             Controls.Add(label1);
             Controls.Add(groupBox1);
@@ -188,6 +188,7 @@
             MaximizeBox = false;
             Name = "frmPago";
             Text = "frmPago";
+            Load += frmPago_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -201,10 +202,10 @@
         private RadioButton rbtnTarjeta;
         private Label label1;
         private ListBox lstTarjetas;
-        private TextBox textBox1;
+        private TextBox txtNroTarjeta;
         private Label label2;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private ComboBox cmbMesExpiracion;
+        private ComboBox cmbAñoExpiracion;
         private Label label3;
         private CheckBox chkPredeterminado;
         private Button btnOk;
