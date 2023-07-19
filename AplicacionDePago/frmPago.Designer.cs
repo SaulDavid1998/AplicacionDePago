@@ -150,12 +150,14 @@
             // 
             // btnOk
             // 
+            btnOk.DialogResult = DialogResult.OK;
             btnOk.Location = new Point(144, 349);
             btnOk.Name = "btnOk";
             btnOk.Size = new Size(94, 27);
             btnOk.TabIndex = 9;
             btnOk.Text = "Ok";
             btnOk.UseVisualStyleBackColor = true;
+            btnOk.Click += btnOk_Click;
             // 
             // btnCancelar
             // 

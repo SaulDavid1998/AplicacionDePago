@@ -43,5 +43,72 @@ namespace AplicacionDePago
             cmbAñoExpiracion.SelectedIndex = 0;
             cmbMesExpiracion.SelectedIndex = 0;
         }
+
+        private bool Validacion()
+        {
+            if (rbtnTarjeta.Checked == true)
+            {
+                if (lstTarjetas.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Se debe seleccionar un tipo de tarjeta", "Error: seleccion de tarjeta");
+                    return false;
+                }
+                if (txtNroTarjeta.Text == "")
+                {
+                    MessageBox.Show("Se debe ingresar un numero de tarjeta", "Error: numero de tarjeta");
+                    return false;
+                }
+                if (cmbMesExpiracion.SelectedIndex == 0)
+                {
+                    MessageBox.Show("Se debe seleccionar un mes", "Error: seleccion de mes");
+                    return false;
+                }
+
+                if (cmbAñoExpiracion.SelectedIndex == 0)
+                {
+                    MessageBox.Show("Se debe seleccionar un año", "Error: seleccion de año");
+                    return false;
+                }
+
+            }
+            return true;
+        }
+
+        private void GuardarDatos()
+        {
+            string mensaje = "";
+
+            if (rbtnTarjeta.Checked == true)
+            {
+                mensaje = "Cargado a tarjeta de credito\n\n" +
+                    "Tipo de tarjeta: " + lstTarjetas.SelectedItem.ToString() + "\n" +
+                    "Numero de tarjeta:" + txtNroTarjeta.Text + "\n" +
+                    "Expiracion: " + cmbMesExpiracion.Text + "/" + cmbAñoExpiracion.Text;
+            }
+
+            if (rbtnEfectivo.Checked == true)
+            {
+                mensaje = "Enviar factura al cliente";
+            }
+
+            Tag = mensaje;
+
+        }
+
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+
+            if (Validacion() == true)
+            {
+                GuardarDatos();
+                //DialogResult=DialogResult.Ok //establecido en el diseñador en la propiedad del boton
+            }
+
+            else
+            {
+                DialogResult = DialogResult.None;
+            }
+        }
     }
 }
