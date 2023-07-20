@@ -38,7 +38,6 @@
             cmbMesExpiracion = new ComboBox();
             cmbAñoExpiracion = new ComboBox();
             label3 = new Label();
-            chkPredeterminado = new CheckBox();
             btnOk = new Button();
             btnCancelar = new Button();
             groupBox1.SuspendLayout();
@@ -58,13 +57,14 @@
             // rbtnEfectivo
             // 
             rbtnEfectivo.AutoSize = true;
-            rbtnEfectivo.Location = new Point(177, 29);
+            rbtnEfectivo.Location = new Point(175, 29);
             rbtnEfectivo.Name = "rbtnEfectivo";
             rbtnEfectivo.Size = new Size(67, 19);
             rbtnEfectivo.TabIndex = 1;
             rbtnEfectivo.TabStop = true;
             rbtnEfectivo.Text = "Efectivo";
             rbtnEfectivo.UseVisualStyleBackColor = true;
+            rbtnEfectivo.CheckedChanged += TipoFacturacion_CheckedChanged;
             // 
             // rbtnTarjeta
             // 
@@ -76,6 +76,7 @@
             rbtnTarjeta.TabStop = true;
             rbtnTarjeta.Text = "Tarjeta";
             rbtnTarjeta.UseVisualStyleBackColor = true;
+            rbtnTarjeta.CheckedChanged += TipoFacturacion_CheckedChanged;
             // 
             // label1
             // 
@@ -138,20 +139,10 @@
             label3.TabIndex = 7;
             label3.Text = "Fecha expiracion";
             // 
-            // chkPredeterminado
-            // 
-            chkPredeterminado.AutoSize = true;
-            chkPredeterminado.Location = new Point(19, 305);
-            chkPredeterminado.Name = "chkPredeterminado";
-            chkPredeterminado.Size = new Size(325, 19);
-            chkPredeterminado.TabIndex = 8;
-            chkPredeterminado.Text = "establecer como método de facturación predeterminado";
-            chkPredeterminado.UseVisualStyleBackColor = true;
-            // 
             // btnOk
             // 
             btnOk.DialogResult = DialogResult.OK;
-            btnOk.Location = new Point(144, 349);
+            btnOk.Location = new Point(144, 331);
             btnOk.Name = "btnOk";
             btnOk.Size = new Size(94, 27);
             btnOk.TabIndex = 9;
@@ -162,7 +153,7 @@
             // btnCancelar
             // 
             btnCancelar.DialogResult = DialogResult.Cancel;
-            btnCancelar.Location = new Point(249, 349);
+            btnCancelar.Location = new Point(249, 331);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(94, 27);
             btnCancelar.TabIndex = 10;
@@ -177,7 +168,6 @@
             ControlBox = false;
             Controls.Add(btnCancelar);
             Controls.Add(btnOk);
-            Controls.Add(chkPredeterminado);
             Controls.Add(label3);
             Controls.Add(cmbAñoExpiracion);
             Controls.Add(cmbMesExpiracion);
@@ -209,7 +199,6 @@
         private ComboBox cmbMesExpiracion;
         private ComboBox cmbAñoExpiracion;
         private Label label3;
-        private CheckBox chkPredeterminado;
         private Button btnOk;
         private Button btnCancelar;
     }

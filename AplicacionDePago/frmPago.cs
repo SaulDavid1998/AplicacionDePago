@@ -110,5 +110,25 @@ namespace AplicacionDePago
                 DialogResult = DialogResult.None;
             }
         }
+
+        private void TipoFacturacion_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbtnEfectivo.Checked == true)
+            {
+                lstTarjetas.Enabled = false;
+                txtNroTarjeta.Enabled = false;
+                cmbAñoExpiracion.Enabled = false;
+                cmbMesExpiracion.Enabled = false;
+
+            }
+
+            else
+            {
+                lstTarjetas.Enabled = true;
+                txtNroTarjeta.Enabled = true;
+                cmbAñoExpiracion.Enabled = true;
+                cmbMesExpiracion.Enabled = true;
+            }
+        }
     }
 }
